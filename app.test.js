@@ -10,7 +10,7 @@ test('GET /health returns UP', async () => {
 test('GET /version returns v2', async () => {
   const res = await request(app).get('/version');
   expect(res.statusCode).toBe(200);
-  expect(res.body.version).toBe('v999');
+  expect(res.body.version).toBe('v2');
 });
 
 test('POST /shorten without url returns 400', async () => {
