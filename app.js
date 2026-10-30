@@ -30,7 +30,7 @@ function isValidUrl(value) {
 
 app.get('/health', (req, res) => res.json({ status: 'UP' }));
 
-app.get('/version', (req, res) => res.json({ env: APP_ENV, version: 'v1' }));
+app.get('/version', (req, res) => res.json({ env: APP_ENV, version: 'v2' }));
 
 app.post('/shorten', async (req, res) => {
   const url = req.body && req.body.url;
